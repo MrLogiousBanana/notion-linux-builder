@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Notion
+Comment=Your connected workspace for wiki, docs & projects
+Exec=/usr/local/bin/notion-app %U
+Terminal=false
+Type=Application
+Icon=notion
+StartupWMClass=notion
+MimeType=x-scheme-handler/notion;
+Categories=Office;Utility;
+Keywords=notion;notes;wiki;workspace;
