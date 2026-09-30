@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+    <title>Notion</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: #191919;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 24px;
+            animation: pulse 2s infinite ease-in-out;
+        }
+        .spinner {
+            width: 32px;
+            height: 32px;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            border-top-color: #ffffff;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        @keyframes pulse { 0%, 100% { opacity: 0.8; transform: scale(0.98); } 50% { opacity: 1; transform: scale(1.02); } }
+    </style>
+</head>
+<body>
+    <svg class="logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.008 17.778C20.655 19.333 21.657 19.667 25.109 19.333L79.169 15C81.815 14.778 83.722 13.889 82.075 11.889L73.974 2.889C72.327 1 70.023 0 66.727 0L7.47 4.556C4.174 4.889 2.196 6.333 3.514 8.222L19.008 17.778Z" fill="white"/>
+        <path d="M21.314 26.667V92C21.314 96.444 23.62 98.222 28.562 97.889L85.429 93.333C90.371 92.889 91.359 89.222 91.359 85.556V20.222C91.359 16.556 89.382 14.667 86.417 14.889L23.62 19.444C20.985 19.667 21.314 22.222 21.314 26.667ZM79.827 34.667C80.157 37.111 79.827 39.556 76.862 39.778L72.249 40.111V80.333C67.637 82.778 63.683 84.111 60.388 84.111C54.787 84.111 53.469 81.333 49.516 75.222L39.632 59.889V78.222L45.892 79.556C45.892 81.778 43.586 82.111 39.962 82.333L27.442 83.222C27.112 81.333 28.1 79.778 30.077 79.222L33.701 78.111V41.778L29.088 41.444C29.088 39.333 30.406 37.444 33.371 37.222L47.539 36.111L57.752 52.333V37.222L53.14 36.889C53.14 34.778 54.457 33.556 57.423 33.333L79.827 34.667Z" fill="white"/>
+    </svg>
+    <div class="spinner"></div>
+    <script>
+        setTimeout(() => {
+            window.location.href = "https://app.notion.com";
+        }, 200);
+    </script>
+</body>
+</html>

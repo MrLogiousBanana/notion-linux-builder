@@ -1,0 +1,28 @@
+{
+  "appId": "com.notion.android",
+  "appName": "Notion",
+  "webDir": "www",
+  "server": {
+    "url": "https://app.notion.com",
+    "cleartext": false,
+    "allowNavigation": [
+      "*.notion.so",
+      "*.notion.com",
+      "identity.notion.com",
+      "*.notion.site",
+      "*.notionusercontent.com",
+      "accounts.google.com",
+      "*.google.com",
+      "*.google.ru",
+      "*.googleapis.com",
+      "*.gstatic.com",
+      "appleid.apple.com",
+      "*.apple.com"
+    ]
+  },
+  "android": {
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false
+  }
+}
